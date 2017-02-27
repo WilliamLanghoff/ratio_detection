@@ -218,7 +218,7 @@ def minimize_cost(num_iters, search_dist):
             print('Best cost %i: (%.05f, %.05f, %.05f, %.05f, %.05f)' %
                   (best_cost, ww[0], ww[1], ww[2], ww[3], ww[4]))
         if idx % 5 == 4:
-            temp *= 0.9
+            temp *= 0.85
 
     return best_cost, best_ww
 
